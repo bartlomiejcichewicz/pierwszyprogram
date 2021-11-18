@@ -6,10 +6,15 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            string myAge = "Age: ";
-            int wifeAge = 18;
-            string result = myAge + wifeAge;
-            Console.WriteLine(result);
+            bool isTrue = true;
+            bool isFalse = false;
+            bool isReallyTrue = true;
+            bool and = isTrue && isFalse;
+            bool or = isTrue || isReallyTrue;
+            bool negative = !isFalse;
+            Console.WriteLine(and);
+            Console.WriteLine(or);
+            Console.WriteLine(negative);
         }
     }
 }
