@@ -6,17 +6,10 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            double a = 5, b = 12;
-            double add = a + b;
-            double sub = a - b;
-            double div = a / b;
-            double mul = a * b;
-            double mod = a % b;
-            Console.WriteLine(add);
-            Console.WriteLine(sub);
-            Console.WriteLine(div);
-            Console.WriteLine(mul);
-            Console.WriteLine(mod);
+            string a = "Ala ", b = "ma ", c = "kota";
+            string result = a + b + c;
+            Console.WriteLine(result);
+            // Wynikiem dodawania stringów jest ciąg znaków składający się z połączonych ciągów zmiennych składowych *trzeba pamiętać o dodaniu odstępów między wyrazami ;p
         }
     }
 }
