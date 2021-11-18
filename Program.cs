@@ -6,15 +6,17 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            bool isTrue = true;
-            bool isFalse = false;
-            bool isReallyTrue = true;
-            bool and = isTrue && isFalse;
-            bool or = isTrue || isReallyTrue;
-            bool negative = !isFalse;
-            Console.WriteLine(and);
-            Console.WriteLine(or);
-            Console.WriteLine(negative);
+            double a = 5, b = 12;
+            double add = a + b;
+            double sub = a - b;
+            double div = a / b;
+            double mul = a * b;
+            double mod = a % b;
+            Console.WriteLine(add);
+            Console.WriteLine(sub);
+            Console.WriteLine(div);
+            Console.WriteLine(mul);
+            Console.WriteLine(mod);
         }
     }
 }
