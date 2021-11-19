@@ -6,9 +6,9 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            string[] colors = { "zielony", "niebieski", "różowy", "czarny", "fioletowy" };
-            Console.WriteLine("Mój pierwszy kolor to: " + colors[0]);
-            Console.WriteLine("Mój ostatni kolor to: " + colors[colors.Length - 1]);
+            int[] numbers = { 7, 15, 3, 21, 9, 4, 15, 31, 44, 1 };
+            for (int i = 0; i < numbers.Length; i++)
+                Console.WriteLine("Liczba: " + numbers[i]);
         }
     }
 }
