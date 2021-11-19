@@ -6,13 +6,13 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
-                Console.Write("C# ");
-            int j = 0;
-            while (j < 10)
+            int n = 10;
+            for (int i = 0; i <= n; i++)
             {
-                Console.Write("C# ");
-                j++;
+                if (i % 2 == 0)
+                    Console.WriteLine(i + " - Parzysta");
+                else
+                    Console.WriteLine(i + " - Nieparzysta");
             }
         }
     }
