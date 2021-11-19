@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PierwszyProgram
 {
@@ -6,9 +7,27 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 7, 15, 3, 21, 9, 4, 15, 31, 44, 1 };
-            for (int i = 0; i < numbers.Length; i++)
-                Console.WriteLine("Liczba: " + numbers[i]);
+            List<string> fruits = new List<string>();
+            fruits.Add("Jabłko");
+            fruits.Add("Gruszka");
+            fruits.Add("Brzoskwinia");
+            fruits.Add("Czereśnie");
+            int i = 0;
+            for (i = 0; i < fruits.Count; i++)
+            {
+                Console.Write(fruits[i]);
+                if (i < fruits.Count - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
+            fruits.Remove("Jabłko");
+            fruits.RemoveAt(fruits.Count - 1);
+            for (i = 0; i < fruits.Count; i++)
+            {
+                Console.Write(fruits[i]);
+                if (i < fruits.Count - 1)
+                    Console.Write(", ");
+            }
         }
     }
 }
