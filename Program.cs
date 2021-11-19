@@ -6,10 +6,13 @@ namespace PierwszyProgram
     {
         static void Main(string[] args)
         {
-            string a = "Ala ", b = "ma ", c = "kota";
-            string result = a + b + c;
-            Console.WriteLine(result);
-            // Wynikiem dodawania stringów jest ciąg znaków składający się z połączonych ciągów zmiennych składowych *trzeba pamiętać o dodaniu odstępów między wyrazami ;p
+            int n1 = 10, n2 = 20;
+            if (n1 > n2)
+                Console.WriteLine("n1 jest większe od n2");
+            else if (n2 > n1)
+                Console.WriteLine("n2 jest większe od n1");
+            else
+                Console.WriteLine("n1 jest równe n2");
         }
     }
 }
